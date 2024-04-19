@@ -45,6 +45,8 @@
             textBox7 = new TextBox();
             textBox8 = new TextBox();
             button1 = new Button();
+            AdminRadioButton = new RadioButton();
+            StudentRadioButton = new RadioButton();
             SuspendLayout();
             // 
             // label1
@@ -179,18 +181,42 @@
             // 
             // button1
             // 
-            button1.Location = new Point(236, 167);
+            button1.Location = new Point(353, 169);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 16;
             button1.Text = "Register";
             button1.UseVisualStyleBackColor = true;
             // 
+            // AdminRadioButton
+            // 
+            AdminRadioButton.AutoSize = true;
+            AdminRadioButton.Location = new Point(44, 173);
+            AdminRadioButton.Name = "AdminRadioButton";
+            AdminRadioButton.Size = new Size(61, 19);
+            AdminRadioButton.TabIndex = 17;
+            AdminRadioButton.TabStop = true;
+            AdminRadioButton.Text = "Admin";
+            AdminRadioButton.UseVisualStyleBackColor = true;
+            // 
+            // StudentRadioButton
+            // 
+            StudentRadioButton.AutoSize = true;
+            StudentRadioButton.Location = new Point(148, 173);
+            StudentRadioButton.Name = "StudentRadioButton";
+            StudentRadioButton.Size = new Size(66, 19);
+            StudentRadioButton.TabIndex = 18;
+            StudentRadioButton.TabStop = true;
+            StudentRadioButton.Text = "Student";
+            StudentRadioButton.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(545, 213);
+            Controls.Add(StudentRadioButton);
+            Controls.Add(AdminRadioButton);
             Controls.Add(button1);
             Controls.Add(textBox5);
             Controls.Add(textBox6);
@@ -233,5 +259,7 @@
         private TextBox textBox7;
         private TextBox textBox8;
         private Button button1;
+        private RadioButton AdminRadioButton;
+        private RadioButton StudentRadioButton;
     }
 }
