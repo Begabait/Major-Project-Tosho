@@ -25,7 +25,7 @@ namespace Major_Project_Tosho
             using (SqlCommand checkEmail = new SqlCommand(email, con))
             {
                 string date = DateTime.Now.ToString();
-                MessageBox.Show(date);
+                //MessageBox.Show(date);
                 checkEmail.Parameters.AddWithValue("@Email", emailTextBox.Text);
 
                 SqlDataAdapter adapter = new SqlDataAdapter(checkEmail);
@@ -54,13 +54,12 @@ namespace Major_Project_Tosho
             con.Close();
         }
 
-        string hashPassword(string password)
-        {
-            SHA256 hashAlgorithm = SHA256.Create();
-            var bytes = Encoding.Default.GetBytes(password);
-            var hash = hashAlgorithm.ComputeHash(bytes);
-            return Convert.ToBase64String(hash);
-        }
-
+        //string hashPassword(string password)
+        //{
+        //    SHA256 hashAlgorithm = SHA256.Create();
+        //    var bytes = Encoding.Default.GetBytes(password);
+        //    var hash = hashAlgorithm.ComputeHash(bytes);
+        //    return Convert.ToBase64String(hash);
+        //}
     }
 }
