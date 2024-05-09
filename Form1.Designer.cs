@@ -33,12 +33,14 @@
             emailTextBox = new TextBox();
             passwordTextBox = new TextBox();
             LogInButton = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(44, 40);
+            label1.Location = new Point(129, 59);
             label1.Name = "label1";
             label1.Size = new Size(81, 15);
             label1.TabIndex = 0;
@@ -47,7 +49,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(44, 95);
+            label2.Location = new Point(113, 113);
             label2.Name = "label2";
             label2.Size = new Size(57, 15);
             label2.TabIndex = 1;
@@ -55,14 +57,14 @@
             // 
             // emailTextBox
             // 
-            emailTextBox.Location = new Point(131, 40);
+            emailTextBox.Location = new Point(216, 51);
             emailTextBox.Name = "emailTextBox";
             emailTextBox.Size = new Size(100, 23);
             emailTextBox.TabIndex = 2;
             // 
             // passwordTextBox
             // 
-            passwordTextBox.Location = new Point(131, 92);
+            passwordTextBox.Location = new Point(176, 105);
             passwordTextBox.Name = "passwordTextBox";
             passwordTextBox.PasswordChar = '*';
             passwordTextBox.Size = new Size(100, 23);
@@ -70,7 +72,7 @@
             // 
             // LogInButton
             // 
-            LogInButton.Location = new Point(109, 142);
+            LogInButton.Location = new Point(113, 164);
             LogInButton.Name = "LogInButton";
             LogInButton.Size = new Size(75, 23);
             LogInButton.TabIndex = 4;
@@ -78,11 +80,24 @@
             LogInButton.UseVisualStyleBackColor = true;
             LogInButton.Click += LogInButton_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.LOGO;
+            pictureBox1.InitialImage = Properties.Resources.LOGO;
+            pictureBox1.Location = new Point(-16, -14);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(141, 111);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(301, 196);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(328, 225);
+            Controls.Add(pictureBox1);
             Controls.Add(LogInButton);
             Controls.Add(passwordTextBox);
             Controls.Add(emailTextBox);
@@ -90,6 +105,7 @@
             Controls.Add(label1);
             Name = "Form1";
             Text = "Log In";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -101,5 +117,6 @@
         private TextBox emailTextBox;
         private TextBox passwordTextBox;
         private Button LogInButton;
+        private PictureBox pictureBox1;
     }
 }
