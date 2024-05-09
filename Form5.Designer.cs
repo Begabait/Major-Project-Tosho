@@ -73,7 +73,6 @@
             label1.Size = new Size(258, 31);
             label1.TabIndex = 6;
             label1.Text = "Subjects to select from";
-            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -81,9 +80,9 @@
             label2.Font = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
             label2.Location = new Point(64, 117);
             label2.Name = "label2";
-            label2.Size = new Size(164, 13);
+            label2.Size = new Size(168, 13);
             label2.TabIndex = 7;
-            label2.Text = "*you can pick several subjects*";
+            label2.Text = "*you can change a subject later";
             // 
             // Form5
             // 
